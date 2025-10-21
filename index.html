@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vraj Patel | Software Engineer Portfolio</title>
+  <!-- Load Tailwind CSS via CDN for rapid styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* Custom styles for the dark theme and font */
+    :root {
+      --primary-color: #3b82f6;
+      /* Tailwind blue-500 */
+      --accent-color: #fcd34d;
+      /* Tailwind amber-300 */
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0f172a;
+      /* Slate-900 */
+      color: #f1f5f9;
+      /* Slate-100 */
+      scroll-behavior: smooth;
+    }
+
+    .text-accent {
+      color: var(--accent-color);
+    }
+
+    .bg-card {
+      background-color: #1e293b;
+      /* Slate-800 */
+    }
+
+    .btn-primary {
+      transition: all 0.2s;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-sm shadow-lg">
+    <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-extrabold text-accent">VRAJ PATEL</a>
+      <div class="space-x-4 hidden md:flex">
+        <a href="#about" class="hover:text-primary-color transition-colors">About</a>
+        <a href="#experience" class="hover:text-primary-color transition-colors">Experience</a>
+        <a href="#projects" class="hover:text-primary-color transition-colors">Projects</a>
+        <a href="#contact" class="hover:text-primary-color transition-colors">Contact</a>
+      </div>
+      <a href="mailto:patelvn231@gmail.com"
+        class="md:hidden text-primary-color hover:text-accent font-semibold">Email</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
+    <section id="hero" class="text-center md:text-left md:flex items-center justify-between">
+      <div class="md:w-3/5">
+        <p class="text-lg text-primary-color mb-2">Hello, I'm</p>
+        <h1 class="text-6xl sm:text-7xl lg:text-8xl font-black leading-tight mb-4 text-white">
+          VRAJ <span class="text-accent">PATEL</span>
+        </h1>
+        <h2 class="text-3xl sm:text-4xl font-semibold mb-6">
+          Software Engineer | B.Eng, Concordia
+        </h2>
+        <p class="text-xl text-slate-400 max-w-xl mx-auto md:mx-0">
+          Highly motivated engineer specializing in **Full-Stack Development (React/Node/SQL)** and **Enterprise Tooling
+          (C#/Python)**, with a focus on scalable and robust solutions.
+        </p>
+        <div class="mt-8 space-x-4">
+          <!-- Placeholder for your resume PDF -->
+          <a href="#"
+            class="btn-primary inline-block bg-primary-color text-white py-3 px-6 rounded-lg font-bold hover:bg-blue-600">
+            View Resume (PDF)
+          </a>
+          <a href="#projects"
+            class="btn-primary inline-block text-primary-color border border-primary-color py-3 px-6 rounded-lg font-bold hover:bg-primary-color/10">
+            See Projects
+          </a>
+        </div>
+      </div>
+      <!-- Placeholder for a professional image or avatar -->
+      <div class="mt-12 md:mt-0 md:w-2/5 flex justify-center">
+        <div
+          class="w-64 h-64 bg-slate-700 rounded-full flex items-center justify-center border-4 border-primary-color shadow-2xl">
+          <span class="text-5xl text-white font-bold">VP</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="mt-24 pt-8 border-t border-slate-700">
+      <h2 class="text-4xl font-bold mb-8 text-center text-primary-color">About Me</h2>
+      <div class="bg-card p-8 rounded-xl shadow-xl max-w-4xl mx-auto">
+        <p class="text-lg mb-4">
+          As a final-year Software Engineering student from **Concordia University**, I bridge academic excellence with
+          practical experience gained during my internship at **Siemens**. My approach combines technical expertise in
+          the modern web stack with the system thinking required for low-level automation.
+        </p>
+        <p class="text-lg">
+          I thrive in Agile environments and am committed to writing clean, maintainable code. Whether it’s architecting
+          a full-stack application like **TrackMyDegree** or optimizing testing processes using **C#** and **Python**,
+          my focus remains on delivering reliable, performance-driven solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="mt-24 pt-8 border-t border-slate-700">
+      <h2 class="text-4xl font-bold mb-8 text-center text-primary-color">Technical Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <!-- Skill Card 1 -->
+        <div class="bg-card p-6 rounded-xl shadow-lg border-b-4 border-primary-color">
+          <h3 class="text-xl font-semibold mb-2 text-accent">Frontend</h3>
+          <p class="text-slate-300">React.js, JavaScript, HTML, CSS</p>
+        </div>
+        <!-- Skill Card 2 -->
+        <div class="bg-card p-6 rounded-xl shadow-lg border-b-4 border-primary-color">
+          <h3 class="text-xl font-semibold mb-2 text-accent">Backend</h3>
+          <p class="text-slate-300">Node.js, C#, Python, Java, C++</p>
+        </div>
+        <!-- Skill Card 3 -->
+        <div class="bg-card p-6 rounded-xl shadow-lg border-b-4 border-primary-color">
+          <h3 class="text-xl font-semibold mb-2 text-accent">Data & DevOps</h3>
+          <p class="text-slate-300">SQL (PostgreSQL), Docker, Git/GitHub, Agile</p>
+        </div>
+        <!-- Skill Card 4 -->
+        <div class="bg-card p-6 rounded-xl shadow-lg border-b-4 border-primary-color">
+          <h3 class="text-xl font-semibold mb-2 text-accent">AI & Systems</h3>
+          <p class="text-slate-300">PyTorch, Scikit-learn, Embedded/RTOS Concepts</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="mt-24 pt-8 border-t border-slate-700">
+      <h2 class="text-4xl font-bold mb-8 text-center text-primary-color">Experience</h2>
+      <div class="bg-card p-8 rounded-xl shadow-xl max-w-4xl mx-auto">
+        <div class="flex justify-between items-start mb-4">
+          <div>
+            <h3 class="text-2xl font-bold text-white">Software Developer Intern</h3>
+            <p class="text-lg text-accent">Siemens, Montreal</p>
+          </div>
+          <span class="text-sm text-slate-400 bg-slate-700 py-1 px-3 rounded-full">May 2022 – Dec 2022</span>
+        </div>
+        <ul class="list-disc list-inside space-y-3 text-slate-300 ml-4">
+          <li>Developed and maintained automated test scripts (**Python, C#**), reducing manual regression testing time
+            by **30%**.</li>
+          <li>Engineered developer tools using **C#/.NET** to streamline internal testing setup and reduce
+            infrastructure overhead.</li>
+          <li>Integrated within an **Agile Scrum team**, actively collaborating on **CI/CD processes** and feature
+            deployment.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="mt-24 pt-8 border-t border-slate-700">
+      <h2 class="text-4xl font-bold mb-8 text-center text-primary-color">Featured Projects</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Project Card 1: TrackMyDegree -->
+        <div
+          class="bg-card p-6 rounded-xl shadow-xl flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300">
+          <div>
+            <h3 class="text-2xl font-bold mb-3 text-accent">TrackMyDegree <span
+                class="text-sm text-primary-color">(Award Winner)</span></h3>
+            <p class="text-slate-300 mb-4">Full-stack application for students to monitor academic progress and course
+              planning.</p>
+            <p class="text-sm text-slate-400 font-mono mb-4">Tech: React.JS | Node.js | SQL | Docker</p>
+          </div>
+          <div class="flex space-x-3">
+            <a href="[GitHub Link 1]" target="_blank"
+              class="btn-primary bg-primary-color text-white py-2 px-4 rounded-lg text-sm hover:bg-blue-600">Code</a>
+            <a href="[Live Demo Link 1]" target="_blank"
+              class="btn-primary border border-primary-color text-primary-color py-2 px-4 rounded-lg text-sm hover:bg-primary-color/10">Demo</a>
+          </div>
+        </div>
+
+        <!-- Project Card 2: SmartClass A.I. Assistant -->
+        <div
+          class="bg-card p-6 rounded-xl shadow-xl flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300">
+          <div>
+            <h3 class="text-2xl font-bold mb-3 text-accent">SmartClass A.I. Assistant</h3>
+            <p class="text-slate-300 mb-4">AI system using a CNN to classify facial expressions for student engagement
+              assessment.</p>
+            <p class="text-sm text-slate-400 font-mono mb-4">Tech: PyTorch | Python | Scikit-learn</p>
+          </div>
+          <div class="flex space-x-3">
+            <a href="[GitHub Link 2]" target="_blank"
+              class="btn-primary bg-primary-color text-white py-2 px-4 rounded-lg text-sm hover:bg-blue-600">Code</a>
+          </div>
+        </div>
+
+        <!-- Project Card 3: Condo Management Website -->
+        <div
+          class="bg-card p-6 rounded-xl shadow-xl flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300">
+          <div>
+            <h3 class="text-2xl font-bold mb-3 text-accent">Condo Management Website</h3>
+            <p class="text-slate-300 mb-4">Web platform for streamlined condo service management (rent, maintenance,
+              updates).</p>
+            <p class="text-sm text-slate-400 font-mono mb-4">Tech: React.JS | SQL | HTML/CSS</p>
+          </div>
+          <div class="flex space-x-3">
+            <a href="[GitHub Link 3]" target="_blank"
+              class="btn-primary bg-primary-color text-white py-2 px-4 rounded-lg text-sm hover:bg-blue-600">Code</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="mt-24 pt-8 border-t border-slate-700 text-center">
+      <h2 class="text-4xl font-bold mb-4 text-primary-color">Get In Touch</h2>
+      <p class="text-xl text-slate-400 mb-8">Let's build something great together. I'm actively looking for full-time
+        roles.</p>
+      <a href="mailto:patelvn231@gmail.com"
+        class="btn-primary inline-block bg-accent text-slate-900 py-3 px-8 rounded-lg font-bold text-lg hover:bg-yellow-400">
+        Email Me: patelvn231@gmail.com
+      </a>
+      <div class="mt-6 text-xl space-x-6">
+        <!-- Replace placeholders with your actual URLs -->
+        <a href="[Your LinkedIn URL]" target="_blank" class="hover:text-primary-color transition-colors">LinkedIn</a>
+        <a href="[Your GitHub URL]" target="_blank" class="hover:text-primary-color transition-colors">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 border-t border-slate-800 py-8 text-center text-slate-500">
+    <p>&copy; 2025 Vraj Patel. Built with Tailwind CSS.</p>
+  </footer>
+
+</body>
+
+</html>
